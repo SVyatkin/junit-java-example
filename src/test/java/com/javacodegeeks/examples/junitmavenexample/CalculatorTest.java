@@ -34,6 +34,10 @@ public class CalculatorTest {
 		int result = calculator.sum(3, 4);
 
 		assertEquals(7, result);
+
+		int result1 = calculator.sum(4, 4);
+
+		assertEquals(8, result1);
 	}
 
 	@Test
