@@ -18,7 +18,7 @@ public class Calculator implements ICalculator {
 	}
 
 	@Override
-	public int divison(int a, int b) throws Exception {
+	public int division(int a, int b) throws Exception {
 		if (b == 0) {
 			throw new Exception("Divider can't be zero");
 		}
@@ -28,12 +28,6 @@ public class Calculator implements ICalculator {
 
 	@Override
 	public boolean equalIntegers(int a, int b) {
-		boolean result = false;
-
-		if (a == b) {
-			result = true;
-		}
-
-		return result;
+		return a==b;
 	}
 }

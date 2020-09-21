@@ -1,13 +1,11 @@
 package com.javacodegeeks.examples.junitmavenexample;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.After;
 import org.junit.Before;
 import org.junit.BeforeClass;
-import org.junit.Ignore;
 import org.junit.Test;
 
 
@@ -26,7 +24,7 @@ public class CalculatorTest {
 
 	@After
 	public void afterEachTest() {
-		System.out.println("This is exceuted after each Test");
+		System.out.println("This is executed after each Test");
 	}
 
 	@Test
@@ -41,9 +39,9 @@ public class CalculatorTest {
 	}
 
 	@Test
-	public void testDivison() {
+	public void testDivision() {
 		try {
-			int result = calculator.divison(10, 2);
+			int result = calculator.division(10, 2);
 
 			assertEquals(5, result);
 		} catch (Exception e) {
@@ -53,21 +51,20 @@ public class CalculatorTest {
 
 	@Test(expected = Exception.class)
 	public void testDivisionException() throws Exception {
-		calculator.divison(10, 0);
+		calculator.division(10, 0);
 	}
 
-	@Ignore
 	@Test
 	public void testEqual() {
 		boolean result = calculator.equalIntegers(20, 20);
 
-		assertFalse(result);
+		assertTrue(result);
 	}
 
-	@Test(expected = AssertionError.class)
-	public void testSubstraction() {
-		int result = 10 - 3;
+	@Test
+	public void testSubtraction() {
+		int result = calculator.subtraction(10,1);
 
-		assertTrue(result == 9);
+		assertEquals(9, result);
 	}
 }
