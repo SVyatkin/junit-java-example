@@ -4,8 +4,8 @@
 	<groupId>com.mycompany.app</groupId>
 	<artifactId>junitmavenexample</artifactId>
 	<packaging>jar</packaging>
-	<version>1.0-SNAPSHOT</version>
-	<name>junitmavenexample</name>
+	<version>1.0</version>
+	<name>junit.maven.example</name>
 	<url>http://maven.apache.org</url>
 <!--	SonarCloud Properties-->
 	<properties>
@@ -27,7 +27,7 @@
 	<distributionManagement>
 		<repository>
 			<id>junit.java.example</id>
-			<name>junit-java-example</name>
+			<name>junit.java.example</name>
 			<url>https://maven.pkg.github.com/svyatkin/junit-java-example</url>
 		</repository>
 	</distributionManagement>
