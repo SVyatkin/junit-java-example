@@ -25,12 +25,4 @@
       </repositories>
     </profile>
   </profiles>
-
-  <servers>
-    <server>
-      <id>github</id>
-      <username>SVyatkin</username>
-      <password>738f7fb49673c2ed538d449727bb29db8ea211cd</password>
-    </server>
-  </servers>
 </settings>
